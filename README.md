@@ -1,29 +1,73 @@
-# m365-access-troubleshooting
+# Microsoft 365 Access Troubleshooting  
+**IT Analyst Portfolio Project**
 
-Microsoft 365 Access Troubleshooting (IT Analyst Portfolio Project)
+> A collection of realistic IT Analyst-style ticket investigations focused on Microsoft 365 access issues  
+> (licensing, MFA, Conditional Access, and client troubleshooting).
 
-Purpose
-This repository contains realistic IT Analyst-style ticket investigations focused on Microsoft 365 access issues (licensing, MFA, Conditional Access, and client troubleshooting). Each ticket documents the user report, troubleshooting workflow, evidence reviewed, root cause, and resolution.
+---
 
-Tools / Platforms
-Microsoft 365 Admin Center
-Microsoft Entra ID Admin Center
-Sign-in logs
+## Table of Contents
+- [Overview](#overview)
+- [Tools & Platforms](#tools--platforms)
+- [Case Studies](#case-studies)
+- [Repository Structure](#repository-structure)
+- [Key Skills Demonstrated](#key-skills-demonstrated)
+- [Notes](#notes)
 
-Case Studies
-Ticket 01 — License assignment issue
-Ticket 02 — MFA registration/authentication failure
-Ticket 03 — Conditional Access block
-Ticket 04 — Teams/Outlook desktop client issue
-Ticket 05 — SharePoint/OneDrive permissions issue
+---
 
-Key Skills Demonstrated
-SaaS troubleshooting workflow
-Identity and access troubleshooting (Entra ID)
-License/service plan verification
-MFA investigation and remediation
-Interpreting sign-in logs + policy impact
-Documentation and escalation decisions
+## Overview
+This repository documents hands-on troubleshooting workflows for common Microsoft 365 access problems.  
+Each ticket includes:
 
-Notes
-All user accounts are test accounts in a lab tenant. Sensitive details are removed from screenshots.
+- User-reported issue + symptoms  
+- Investigation steps and evidence reviewed  
+- Root cause analysis  
+- Resolution steps  
+- Verification and follow-up notes  
+
+The goal is to demonstrate practical, job-relevant IT Analyst skills: structured troubleshooting, identity/access diagnosis, and clear documentation.
+
+---
+
+## Tools & Platforms
+- **Microsoft 365 Admin Center**
+- **Microsoft Entra ID Admin Center** (formerly Azure AD)
+- **Entra ID Sign-in Logs**
+- *(Optional, where applicable)* Microsoft Teams / Outlook clients, SharePoint / OneDrive admin settings
+
+---
+
+## Case Studies
+| Ticket | Scenario | Primary Focus |
+|------:|----------|---------------|
+| 01 | License assignment issue | Licensing / service plans |
+| 02 | MFA registration/authentication failure | MFA troubleshooting / sign-in logs |
+| 03 | Conditional Access block | Policy impact / access controls |
+| 04 | Teams/Outlook desktop client issue | Client vs web isolation / remediation |
+| 05 | SharePoint/OneDrive permissions issue | Access/permissions / sharing |
+
+> Ticket documentation is located in the `docs/` folder.
+
+---
+
+## Repository Structure
+```text
+m365-access-troubleshooting/
+├─ README.md
+├─ docs/
+│  ├─ environment-setup.md
+│  ├─ troubleshooting-checklist.md
+│  ├─ ticket-01-license-issue.md
+│  ├─ ticket-02-mfa-issue.md
+│  ├─ ticket-03-conditional-access-block.md
+│  ├─ ticket-04-teams-outlook-client-issue.md
+│  └─ ticket-05-sharepoint-onedrive-permissions.md
+├─ screenshots/
+│  ├─ ticket-01/
+│  ├─ ticket-02/
+│  ├─ ticket-03/
+│  ├─ ticket-04/
+│  └─ ticket-05/
+└─ templates/
+   └─ ticket-template.md
