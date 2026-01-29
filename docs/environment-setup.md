@@ -21,8 +21,8 @@ This document describes the Microsoft 365 lab environment used for Microsoft 365
 ## Test User Accounts
 The following test user accounts were created to simulate real-world access and authentication issues:
 
-- `jordan.user1@<tenant>.onmicrosoft.com`
-- `jordan.user2@<tenant>.onmicrosoft.com`
+- `jordon.user1@<tenant>.onmicrosoft.com`
+- `jordon.user2@<tenant>.onmicrosoft.com`
 
 > Usernames are anonymized and used solely for lab-based troubleshooting scenarios.
 
