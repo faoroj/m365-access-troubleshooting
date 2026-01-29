@@ -2,7 +2,7 @@
 **IT Analyst Portfolio Project**
 
 > A collection of realistic IT Analyst-style ticket investigations focused on Microsoft 365 access issues  
-> (licensing, MFA, Conditional Access, and client troubleshooting)...
+> (licensing, MFA, Conditional Access, and client troubleshooting)..
 
 ---
 
