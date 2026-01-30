@@ -68,7 +68,7 @@ m365-access-troubleshooting/
 │  ├─ ticket-02/
 │  ├─ ticket-03/
 │  ├─ ticket-04/
-│  ├─  ticket-05/
+│  ├─ ticket-05/
 │  └─ environment/
 └─ templates/
    └─ ticket-template.md
