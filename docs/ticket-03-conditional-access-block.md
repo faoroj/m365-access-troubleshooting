@@ -4,15 +4,16 @@
 User reports being blocked from accessing Microsoft Teams after a successful login.
 
 ## Initial Hypothesis
-- MFA not properly registered
-- Authentication method unavailable
-- MFA requirement enforced but not satisfied
+- Conditional Access policy blocking access
+- MFA requirement not satisfied
+- Licensing or service plan issue
 
 ## Investigation Steps
-1. Reviewed user report indicating sign-in failure related to MFA prompts.
-2. Verified user account status in Entra ID
-3. Reviewed authentication methods for the user: no MFA methods registered
-4. Analyzed Entra ID sign-in logs: Sign-in attempts interrupted, MFA requirement enforced but not completed
+1. Confirmed the user account was enabled and licensed for Microsoft Teams.
+2. Attempted user sign-in and observed access blocked by organizational policy.
+3. Reviewed Microsoft Entra ID sign-in logs for the affected user.
+4. Identified a Conditional Access policy blocking Microsoft Teams access.
+5. Verified the specific policy name and block action applied to the user.
 
 ## Root Cause
 Conditional Access policy is blocking Microsoft Teams for the user.
