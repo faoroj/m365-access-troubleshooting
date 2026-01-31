@@ -15,7 +15,7 @@ User reports inability to access Microsoft Teams.
 5. Checked service plan to ensure Teams is included.
 
 ## Root Cause
-The user account does not have a Microsoft 365 license assigned and will not be able to access services without being licensed.
+The user account is not assigned a Microsoft 365 license and will not be able to access services without one.
 
 ## Resolution
 (To be completed)
