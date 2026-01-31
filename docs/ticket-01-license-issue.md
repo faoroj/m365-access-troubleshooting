@@ -13,6 +13,7 @@ User reports inability to access Microsoft Teams.
 3. Confirmed user is part of the IT-Test-Users security group.
 4. Checked licensing status in Microsoft 365 Admin Center:
 5. Checked service plan to ensure Teams is included.
+6. Verified successful Microsoft Teams sign-in via Entra ID sign-in logs after license assignment.
 
 ## Root Cause
 The user account is not assigned a Microsoft 365 license and will not be able to access services without one.
