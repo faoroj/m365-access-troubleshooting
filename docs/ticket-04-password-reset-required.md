@@ -1,26 +1,26 @@
-# Ticket 04 — Teams/Outlook Desktop Client Issue
+# Ticket 04 — Password Reset Required/Credential Issue
 
 ## User Reported Issue
-User reports Microsoft Teams (desktop) fails to load or sign in, but web access works.
+User reports they cannot sign in to Microsoft 365. The password is believed to be correct, but access is denied, or they are stuck in a password reset loop.
 
 ## Initial Hypothesis
-- Corrupted Teams desktop cache
-- Stale authentication tokens
-- Client-specific configuration issue
-- Device-specific issue
+- Expired or incorrect credentials
+- Password reset requirement is preventing authentication
+- User is unable to complete the password change process
 
 ## Investigation Steps
-1. Verified Microsoft Teams web client access was successful.
-2. Reviewed account status and confirmed no identity or licensing issues.
-3. Isolated the issue to the Microsoft Teams desktop application.
-4. Cleared local application cache for the New Microsoft Teams client.
-
+1. Reviewed user report indicating inability to sign in.
+2. Verified user account was enabled and licensed.
+3. Reviewed Entra ID sign-in logs and observed password-related authentication failures.
+4. Confirmed the account was configured to require a password change at next sign-in.
 
 ## Root Cause
-Stale or corrupted local cache data within the Microsoft Teams desktop application caused intermittent client-side access issues.
+The user account was configured to require a password change at the next sign-in, preventing successful authentication until credentials were updated.
 
 ## Resolution
-Cleared the local cache for the Microsoft Teams desktop application, allowing the client to rebuild authentication and configuration data.
+-Reset password again
+-Provide a new temporary password
+-Allow password update to complete successfully
 
 ## Verification
-Confirmed successful Microsoft Teams access via the desktop application after cache reset.
+Confirmed successful sign-in after password reset and credential update.
