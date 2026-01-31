@@ -44,7 +44,7 @@ The goal is to demonstrate practical, job-relevant IT Analyst skills: structured
 | 01 | License assignment issue | Licensing / service plans |
 | 02 | MFA registration/authentication failure | MFA troubleshooting / sign-in logs |
 | 03 | Conditional Access block | Policy impact / access controls |
-| 04 | Teams/Outlook desktop client issue | Client vs web isolation / remediation |
+| 04 | Password Reset Required/Credential Issue | Password resets / Password expiration |
 | 05 | SharePoint/OneDrive permissions issue | Access/permissions / sharing |
 
 > Ticket documentation is located in the `docs/` folder.
