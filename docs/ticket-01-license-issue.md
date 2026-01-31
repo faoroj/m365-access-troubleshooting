@@ -8,10 +8,14 @@ User reports inability to access Microsoft Teams.
 - Service plan disabled
 
 ## Investigation Steps
-(To be completed)
+1. User report claims inability to access Microsoft Teams.
+2. Verified the account is enabled, and no administrative roles have been assigned.
+3. Confirmed user is part of the IT-Test-Users security group.
+4. Checked licensing status in Microsoft 365 Admin Center:
+5. Checked service plan to ensure Teams is included.
 
 ## Root Cause
-(To be completed)
+The user account does not have a Microsoft 365 license assigned and will not be able to access services without being licensed.
 
 ## Resolution
 (To be completed)
