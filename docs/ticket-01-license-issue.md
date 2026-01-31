@@ -18,10 +18,10 @@ User reports inability to access Microsoft Teams.
 The user account is not assigned a Microsoft 365 license and will not be able to access services without one.
 
 ## Resolution
-(To be completed)
+Assigned the appropriate Microsoft 365 license (Office 365 E5) to the user and verified that the Microsoft Teams service plan was enabled.
 
 ## Verification
-(To be completed)
+User access to Microsoft Teams was successfully restored. The user was able to sign in to and access the application without errors after the license was assigned.
 
 ## Notes
-(To be completed)
+License assignment may require several minutes until it is successful.
