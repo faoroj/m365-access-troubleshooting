@@ -4,25 +4,24 @@
 User is prompted for MFA but cannot complete registration or authentication, resulting in access failure.
 
 ## Initial Hypothesis
-- License not assigned
-- Service plan disabled
+- MFA not properly registered
+- Authentication method unavailable
+- MFA requirement enforced but not satisfied
 
 ## Investigation Steps
-1. User report claims inability to access Microsoft Teams.
-2. Verified the account is enabled, and no administrative roles have been assigned.
-3. Confirmed user is part of the IT-Test-Users security group.
-4. Checked licensing status in Microsoft 365 Admin Center:
-5. Checked service plan to ensure Teams is included.
-6. Verified successful Microsoft Teams sign-in via Entra ID sign-in logs after license assignment.
+1. Reviewed user report indicating sign-in failure related to MFA prompts.
+2. Verified user account status in Entra ID
+3. Reviewed authentication methods for the user: no MFA methods registered
+4. Analyzed Entra ID sign-in logs: Sign-in attempts interrupted, MFA requirement enforced but not completed
 
 ## Root Cause
-The user account is not assigned a Microsoft 365 license and will not be able to access services without one.
+The user account did not have any registered multi-factor authentication methods. MFA was required for access, but the user was unable to complete authentication due to missing registered methods.
 
 ## Resolution
-Assigned the appropriate Microsoft 365 license (Office 365 E5) to the user and verified that the Microsoft Teams service plan was enabled.
+Registered a supported multi-factor authentication method for the user, allowing successful completion of MFA challenges during sign-in.
 
 ## Verification
-User access to Microsoft Teams was successfully restored. The user was able to sign in to and access the application without errors after the license was assigned.
+Successful authentication was confirmed by reviewing Entra ID sign-in logs, which showed completed sign-in events after MFA registration.
 
 ## Notes
-License assignment may require several minutes until it is successful.
+User sign-in interruptions and successes may take a significant amount of time to show up in sign-in logs.
