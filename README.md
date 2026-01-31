@@ -61,7 +61,7 @@ m365-access-troubleshooting/
 │  ├─ ticket-01-license-issue.md
 │  ├─ ticket-02-mfa-issue.md
 │  ├─ ticket-03-conditional-access-block.md
-│  ├─ ticket-04-teams-outlook-client-issue.md
+│  ├─ ticket-04-password-reset-required.md
 │  └─ ticket-05-sharepoint-onedrive-permissions.md
 ├─ screenshots/
 │  ├─ ticket-01/
